@@ -1,6 +1,6 @@
 {% set name = "bioimageio.spec" %}
 {% set version = "0.5.15.0" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -21,9 +21,8 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - email-validator
     - annotated-types >=0.5.0,<1
-    - email_validator
+    - email-validator
     - exceptiongroup
     - genericache ==0.5.2
     - httpx
@@ -44,7 +43,6 @@ requirements:
     - tqdm
     - typing_extensions
     - zipp
-
 
 test:
   imports:
